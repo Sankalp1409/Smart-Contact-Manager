@@ -25,7 +25,7 @@ Built using Java Spring Framework for efficient data handling.
 MySQL Database integration.
 
 **Tech Stack**
-**1. Frontend:** HTML, CSS, JavaScript, Tailwind CSS
-**2. Backend:** Java Spring Boot, Spring MVC
-**3. Database:** MySQL
-**4. Build Tool:** Maven
+1. Frontend: HTML, CSS, JavaScript, Tailwind CSS
+2. Backend: Java Spring Boot, Spring MVC
+3. Database: MySQL
+4. Build Tool: Maven
