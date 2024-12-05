@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},'Dashboard Page',~{:: script})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div id="content">
+
+        <div th:if="${loggedInUser}">
+            <div data-th-replace="~{user/sidebar::sidebar}"></div>
+        </div>
+        <div class="sm:pl-64 pt-20 h-fit">
+            <div class="flex justify-center flex-col">
+                <!-- Hero Section -->
+                <section class="text-black py-20 dark:bg-gray-900 dark:text-white">
+                    <div class="container mx-auto text-center">
+                        <h2 class="text-4xl font-bold mb-4">Welcome Back, User</h2>
+                        <p class="text-lg mb-8">Here’s a quick overview of your contact management.</p>
+                    </div>
+                </section>
+                <!-- Dashboard Overview Section -->
+                <section class="py-20 bg-white dark:bg-gray-800">
+                    <div class="container mx-auto text-center">
+                        <h2 class="text-3xl font-bold mb-12">Dashboard Overview</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Total Contacts -->
+                            <div
+                                class="p-6 bg-gray-100 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                                <i class="fas fa-address-book text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold mb-2">Total Contacts</h3>
+                                <p>120 Contacts</p>
+                            </div>
+
+                            <!-- New Messages -->
+                            <div
+                                class="p-6 bg-gray-100 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                                <i class="fas fa-comments text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold mb-2">New Messages</h3>
+                                <p>5 Unread Messages</p>
+                            </div>
+
+                            <!-- Recent Activity -->
+                            <div
+                                class="p-6 bg-gray-100 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                                <i class="fas fa-tasks text-blue-600 dark:text-blue-400 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold mb-2">Recent Activity</h3>
+                                <p>Added 3 new contacts last week.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Links Section -->
+                <section class=" text-black py-20 dark:bg-gray-900 dark:text-white">
+                    <div class="container mx-auto text-center">
+                        <h2 class="text-3xl font-bold mb-4">Quick Links</h2>
+                        <div class="grid grid-cols-1 mt-8 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                            <div>
+                                <a href="/user/contact"
+                                    class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-100  transition duration-300">View
+                                    Contacts</a>
+                            </div>
+                            <div>
+                                <a href="/user/contact/add"
+                                    class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-100  transition duration-300">Add
+                                    New Contact</a>
+                            </div>
+                            <div>
+                                <a href="/user/messages"
+                                    class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-100  transition duration-300">Messages</a>
+                            </div>
+                            <div>
+                                <a href="/user/settings"
+                                    class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-100  transition duration-300">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Contacts Section -->
+                <section class="py-20 bg-white dark:bg-gray-800">
+                    <div class="container mx-auto text-center">
+                        <h2 class="text-3xl font-bold mb-12">Recent Contacts</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Contact 1 -->
+                            <div
+                                class="p-6 bg-gray-100 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                                <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+                                <p>Email: john.doe@example.com</p>
+                                <p>Phone: +1 123 456 7890</p>
+                            </div>
+                            <!-- Contact 2 -->
+                            <div
+                                class="p-6 bg-gray-100 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                                <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
+                                <p>Email: jane.smith@example.com</p>
+                                <p>Phone: +1 987 654 3210</p>
+                            </div>
+                            <!-- Contact 3 -->
+                            <div
+                                class="p-6 bg-gray-100 dark:bg-gray-700 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                                <h3 class="text-xl font-semibold mb-2">Alice Johnson</h3>
+                                <p>Email: alice.johnson@example.com</p>
+                                <p>Phone: +1 555 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer Section -->
+
+            </div>
+        </div>
+    </div>
+    <script></script>
+</body>
+
+</html>

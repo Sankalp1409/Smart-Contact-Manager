@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},'Profile Page',~{:: script})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div id="content">
+
+        <!-- Sidebar -->
+        <div th:if="${loggedInUser}">
+            <div data-th-replace="~{user/sidebar::sidebar}"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="sm:pl-64 pt-20">
+            <div class="flex justify-center flex-col">
+                <section class=" pb-12 pt-6 ">
+                    <div class="container mx-auto text-center ">
+                        <!-- Profile Image and Info -->
+                        <div class="relative inline-block mb-6">
+                            <img data-th-src="@{${loggedInUser.profilePic}}" src="https://via.placeholder.com/150"
+                                alt="Profile Picture"
+                                class="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-4 mx-auto dark:border-gray-700">
+                            <div class="absolute bottom-0 right-0 mb-4 mr-4">
+                                <button
+                                    class="bg-teal-600 text-white p-3 rounded-full hover:bg-teal-700 transition duration-300 focus:outline-none">
+                                    <i class="fas fa-camera"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h2 data-th-text="${loggedInUser.name}" class=" text-3xl font-semibold mb-2 text-black
+                            dark:text-gray-200">Sankalp Shrivastava</h2>
+
+                        <div class="flex justify-center gap-4 text-lg">
+                            <a href="https://www.linkedin.com" target="_blank" class="text-black  dark:text-white">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="text-black  dark:text-white">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="text-black  dark:text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section class="py-16 bg-white dark:bg-gray-800">
+                    <div class="container mx-auto text-center">
+                        <h2 class="text-3xl font-semibold mb-8 text-gray-800 dark:text-gray-200">About Me</h2>
+                        <p data-th-text="${loggedInUser.about}"
+                            class="text-lg max-w-3xl mx-auto text-gray-700 dark:text-gray-300">
+                            Passionate software engineer with expertise in Java, React, and full-stack development. I am
+                            dedicated to
+                            building user-friendly and scalable applications. In my free time, I enjoy contributing to
+                            open-source
+                            projects and enhancing my skills through online courses.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="py-12 bg-gray-50 dark:bg-gray-900">
+
+                </section>
+
+                <!-- Contact Section -->
+                <section class="py-16 bg-white dark:bg-gray-800">
+                    <div class="container mx-auto text-center">
+                        <h2 class="text-3xl font-semibold mb-8 text-gray-800 dark:text-gray-200">Contact Information
+                        </h2>
+                        <p class="text-lg text-gray-700 mb-4 dark:text-gray-300">Feel free to get in touch with me for
+                            collaborations or inquiries.</p>
+                        <p class="text-lg text-gray-700 dark:text-gray-300">Email:
+                            <a href="mailto:sankalp@tcs.com" class="text-teal-600 dark:text-teal-400"
+                                data-th-text="${loggedInUser.email}">sankalp@tcs.com</a>
+                        </p>
+                        <p class="text-lg text-gray-700 mt-2 dark:text-gray-300">Phone: <span
+                                data-th-text="${loggedInUser.phoneNumber}"></span></p>
+                    </div>
+                </section>
+
+                <!-- Recent Activity Section -->
+                <section class="py-16 bg-gray-50 dark:bg-gray-900">
+                    <div class="container mx-auto text-center">
+                        <h2 class="text-3xl font-semibold mb-8 text-gray-800 dark:text-gray-200">Recent Activity</h2>
+                        <div class="flex justify-center gap-8">
+                            <div
+                                class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-72 dark:bg-gray-800 dark:text-gray-200">
+                                <h3 class="text-xl font-semibold mb-4 dark:text-teal-400">Project Launch</h3>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">Launched a new e-commerce platform
+                                    that supports multi-currency and multi-language features.</p>
+                            </div>
+                            <div
+                                class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-72 dark:bg-gray-800 dark:text-gray-200">
+                                <h3 class="text-xl font-semibold mb-4 dark:text-teal-400">Conference Speaker</h3>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">Spoke at the TechCon 2024 about "The
+                                    Future of Full-Stack Development".</p>
+                            </div>
+                            <div
+                                class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-72 dark:bg-gray-800 dark:text-gray-200">
+                                <h3 class="text-xl font-semibold mb-4 dark:text-teal-400">Open Source Contribution</h3>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">Contributed to the React library,
+                                    improving performance for large-scale applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script></script>
+</body>
+
+</html>

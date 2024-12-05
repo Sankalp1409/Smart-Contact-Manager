@@ -1,0 +1,11 @@
+.swal2-confirm {
+  background-color: #1d4ed8 !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+
+.swal2-deny {
+  background-color: red !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
