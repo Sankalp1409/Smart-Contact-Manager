@@ -16,10 +16,16 @@ Attach detailed information, such as email, phone numbers, and notes.
 Instant search capabilities to find contacts quickly.
 Filters based on categories or custom tags.
 
-🌐 **Responsive Design**
+**4.** 🌐 **Responsive Design**
 Optimized for desktops, tablets, and mobile devices.
 Modern UI/UX built with Tailwind CSS.
 
-📈 **Scalable Backend**
+**5.** 📈 **Scalable Backend**
 Built using Java Spring Framework for efficient data handling.
 MySQL Database integration.
+
+**Tech Stack**
+**1. Frontend:** HTML, CSS, JavaScript, Tailwind CSS
+**2. Backend:** Java Spring Boot, Spring MVC
+**3. Database:** MySQL
+**4. Build Tool:** Maven
