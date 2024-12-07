@@ -4,40 +4,43 @@ It provides a user-friendly interface for organizing, adding, and managing conta
 
 **Features**
 
-**1.** 🔒 **Authentication System**
-Dual Authentication:
-    OAuth2 Login: Seamless login using Google or other OAuth2 providers.
-    Normal Login: Secure authentication using username and password.
-Session Management: Maintains user sessions securely.
+**1.** 🔒 **Authentication System**<br><br>
+Dual Authentication:<br>
+pOAuth2 Login: Seamless login using Google or other OAuth2 providers.<br>
+    Normal Login: Secure authentication using username and password.<br>
+Email Authentication:<br>
+    Email Verification: Users receive a verification email upon signup to activate their account.<br>
+    Password Reset: Secure password recovery using email-based authentication.<br>
+Session Management: Maintains user sessions securely<br>
 
-**2.** 🌗 **Theme Customization**
-Light and Dark Themes: Easily toggle between themes for optimal viewing.
-User preferences are saved for a consistent experience.
+**2.** 🌗 **Theme Customization**<br><br>
+Light and Dark Themes: Easily toggle between themes for optimal viewing.<br>
+User preferences are saved for a consistent experience.<br>
 
-**3.** 📇 **Contact Management**
-Add, Edit, and Delete contacts.
-Attach detailed information, such as email, phone numbers, and notes.
-**Image Upload:** Store contact images securely on the **cloud**.
+**3.** 📇 **Contact Management**<br><br>
+Add, Edit, and Delete contacts.<br>
+Attach detailed information, such as email, phone numbers, and notes.<br>
+**Image Upload:** Store contact images securely on the **cloud**.<br>
 
-**4.** 🔍 **Search and Filter**
-Instant search capabilities to find contacts quickly.
-Filters based on categories or custom tags.
+**4.** 🔍 **Search and Filter**<br><br>
+Instant search capabilities to find contacts quickly.<br>
+Filters based on categories or custom tags.<br>
 
-**5.** 🌐 **Responsive Design**
-Optimized for desktops, tablets, and mobile devices.
-Modern UI/UX built with Tailwind CSS.
+**5.** 🌐 **Responsive Design**<br><br>
+Optimized for desktops, tablets, and mobile devices.<br>
+Modern UI/UX built with Tailwind CSS.<br>
 
-**6.** 📈 **Scalable Backend**
-Built using Java Spring Framework for efficient data handling.
-MySQL Database integration.
+**6.** 📈 **Scalable Backend**<br><br>
+Built using Java Spring Framework for efficient data handling.<br>
+MySQL Database integration.<br>
 
-**Tech Stack**
-1. Frontend: HTML, CSS, JavaScript, Tailwind CSS
-2. Backend: Java Spring Boot, Spring MVC
-3. Database: MySQL
-4. Build Tool: Maven
+**Tech Stack**<br><br>
+1. Frontend: HTML, CSS, JavaScript, Tailwind CSS<br>
+2. Backend: Java Spring Boot, Spring MVC<br>
+3. Database: MySQL<br>
+4. Build Tool: Maven<br>
 
-**Screenshots**
+**Screenshots**<br><br>    
 
 
 ![image](https://github.com/user-attachments/assets/82dd9c9e-60bc-4690-a32d-02b53be511a5)
